@@ -63,7 +63,7 @@ __TBD__: more precise description. I don't actually know how to do this. How do 
 
 ## Prior Art
 - Python __TODO__
-- Clojure Compiler __TODO__
+- Closure Compiler __TODO__
 - JSDoc __TODO__
 - Flow __TODO__
   - comment-based Flow __TODO__

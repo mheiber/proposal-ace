@@ -13,7 +13,6 @@ Current Stage:
 * Scott Whittaker ([github](https://github.com/scottrobertwhittaker))
 
 ## Motivation
-
 This proposal introduces a new form of comment to JS: comments that are *colocated* with other syntax in an ergonomic matter. The proposal is neutral as to how these comments are used, but their natural use case is to *describe* other parts of syntax.
 
 For example, compare this JS:
@@ -34,7 +33,7 @@ JSDoc and similar tools ride on top of existing syntax to provide awkward, yet s
  * @param id {String} user Id
  * @return {Object} user
  **/
-function retriveUser(id) {
+function retrieveUser(id) {
     ....
 }
 ```
@@ -52,10 +51,9 @@ function retrieveUser(id: string): User {
 Annotations in TS are useful for code readability and tooling support. However, using existing comment syntax (`/* ... */` and `//`) is unergonomic and wastes space. Overuse of JSDoc comments, for example, can *impair* readability through waste of space.
 
 # Overview
-
 This proposal adds a new form of inline comment to JS.
 
-Any Identifier or PrivateIdentifier may be followed by an Annotation, where an annotation consists of a colon (`:`), followed by ____.
+Any Identifier or PrivateIdentifier may be followed by an Annotation, where an annotation consists of a colon (`:`), followed by `____`.
 
 __TBD__: more precise description. I don't actually know how to do this. How do we know where the annotation ends?
 
@@ -72,7 +70,6 @@ __TBD__: more precise description. I don't actually know how to do this. How do 
 
 ## Specification
 - TBD
-
 
 ## TODO
 Per the [TC39 process document](https://tc39.github.io/process-document/), here is a high level list of work that needs to happen across the various proposal stages.

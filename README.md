@@ -10,7 +10,7 @@ Current Stage:
 
 ## Authors
 * Max Heiber ([github](https://github.com/mheiber), [twitter](https://twitter.com/maxheiber))
-* Scott Whittaker __TODO__ links
+* Scott Whittaker ([github](https://github.com/scottrobertwhittaker))
 
 ## Motivation
 

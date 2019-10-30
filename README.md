@@ -60,13 +60,37 @@ __TBD__: more precise description. I don't actually know how to do this. How do 
 ## Notes
 
 ## Prior Art
-- Python __TODO__
-- Closure Compiler __TODO__
-- JSDoc __TODO__
-- Flow __TODO__
-  - comment-based Flow __TODO__
-- TypeScript __TODO__
-- Sorbet for Rub __TODO__
+
+- [TypeScript][ts] is a superset of JavaScript that provides static type checking. [TypeScript has a fully-documented grammar][ts-grammar], using colons to introduce type annotations and angle brackets to introduce type variables in generics.
+
+- The [Flow type checker][flow] provides static type checking for JavaScript files.  Unlike TypeScript, Flow [does not have a specified grammar][flow-no-grammar].  It uses a [similar syntax for generics as TypeScript][flow-generics], but additionally provides syntax for [maybe types][flow-maybe-types] and [exact object types][flow-exact-object-types] which are not grammatical JavaScript.
+
+- [Python][python] provides a [syntax for function annotations, defined in PEP 3107][pep-3107], which are parsed but do not affect the semantics of the program.
+
+[ts]: https://www.typescriptlang.org/index.html
+[ts-grammar]: https://github.com/microsoft/TypeScript/blob/master/doc/spec.md#a1-types
+[flow]: https://flow.org/
+[flow-no-grammar]: https://github.com/facebook/flow/issues/3429
+[flow-generics]: https://flow.org/en/docs/types/generics/
+[flow-maybe-types]: https://flow.org/en/docs/types/maybe/
+[flow-exact-object-types]: https://flow.org/en/docs/lang/width-subtyping/
+[python]: https://www.python.org/
+[pep-3107]: https://www.python.org/dev/peps/pep-3107/
+
+### Different approaches
+
+- [Google Closure Compiler][closure] is a JavaScript-to-JavaScript optimizing compiler which supports type annotations. Its ["types always appear in comments, never in the syntax of JavaScript itself."][closure-types]
+
+- The [JSDoc documentation system][jsdoc] annotates types using a [comment-based syntax][jsdoc-types] which extends the Closure Compiler's syntax.
+
+- The [Sorbet library for Ruby][sorbet] annotates types using a [decorator-like syntax][sorbet-types] implemented using metaprogramming.
+
+[closure]: https://github.com/google/closure-compiler/
+[closure-types]: https://github.com/google/closure-compiler/wiki/Types-in-the-Closure-Type-System
+[jsdoc]: https://jsdoc.app/
+[jsdoc-types]: https://jsdoc.app/tags-type.html
+[sorbet]: https://sorbet.org/
+[sorbet-types]: https://sorbet.org/docs/sigs
 
 ## Specification
 - TBD

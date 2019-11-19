@@ -1,4 +1,3 @@
-- [ ] what do we do re `type`/`interface`? Save it for a separate proposal?
 - [ ] is it possible to even specify this syntax while keeping the goal of being compatible with TS/Flow/whatever? How do we know when the `Annotation` ends?
 
 
@@ -58,6 +57,7 @@ Any Identifier or PrivateIdentifier may be followed by an Annotation, where an a
 __TBD__: more precise description. I don't actually know how to do this. How do we know where the annotation ends?
 
 ## Notes
+Dealing with `type`, `interface`, and other keywords is out of scope of this proposal.
 
 ## Prior Art
 
